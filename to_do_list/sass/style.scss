@@ -1,0 +1,83 @@
+/* VARIABLES */
+$cor_principal: #1a1423;
+$cor_fonte: #f6f4f3;
+$botao_verde: #4aa81e;
+$botao_vermelho: #dd504d;
+
+/* SCSS */
+
+body {
+  background-color: $cor_fonte;
+}
+
+/* MAIN */
+.container {
+  background-color: $cor_principal;
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  color: $cor_fonte;
+  font-family: "Acme", sans-serif;
+  height: auto;
+  border-radius: 10px;
+
+  /* HEADER */
+  h1 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  /* BUTTONS */
+  .btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  #addBtn {
+    color: $botao_verde;
+    border: 2px solid $botao_verde;
+    background-color: $cor_principal;
+
+    &:hover {
+      color: white;
+      border: 2px solid $botao_verde;
+      background-color: $botao_verde;
+    }
+  }
+  #removeAllBtn {
+    color: $botao_vermelho;
+    border: 2px solid $botao_vermelho;
+    background-color: $cor_principal;
+
+    &:hover {
+      color: white;
+      border: 2px solid $botao_vermelho;
+      background-color: $botao_vermelho;
+    }
+  }
+}

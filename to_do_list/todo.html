@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SCRIPTS -->
+    <script src="./todo.js" defer></script>
+
+    <link rel="stylesheet" href="../to_do_list/css/style.css" />
+
+    <title>To-do List</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="top">
+        <h1>To-do List</h1>
+
+        <input
+          id="item"
+          type="text"
+          class="form-control"
+          placeholder="Hunt a duck"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </header>
+
+      <ul id="list" class="listToRemove"></ul>
+
+      <div class="buttonArea">
+        <button class="btn" id="addBtn">Add</button>
+
+        <button class="btn" id="removeAllBtn">Remove all</button>
+      </div>
+    </main>
+  </body>
+</html>
